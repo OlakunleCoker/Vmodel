@@ -4,7 +4,7 @@ FROM python:3.10.1
 # Set the working directory in the container
 WORKDIR /mytest
 
-# Copy the current directory contents into the container at /app
+# Copy the current directory contents into the container at /mytest
 COPY . /mytest
 
 # Install any needed packages specified in requirements.txt
@@ -16,5 +16,5 @@ EXPOSE 80
 # Define environment variable
 ENV NAME World
 
-# Run app.py when the container launches
+# Run test.py when the container launches
 CMD ["python", "mytest.py"]
