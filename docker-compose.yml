@@ -6,6 +6,6 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - .:/mytest
+      - .:/app
     environment:
       - NAME=World
